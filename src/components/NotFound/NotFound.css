@@ -1,0 +1,18 @@
+.notFound-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+}
+.notFound-image{
+    width: 330px;
+    height: 220px;
+    margin-bottom: 50px;
+}
+.notFound-title{
+    font-size: 28px;
+    color: #ececec;
+    font-weight: 700;
+    text-align: center;
+    text-transform: capitalize;
+}
