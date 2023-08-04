@@ -6,6 +6,7 @@ import clear from "../../images/clear.png"
 import mist from "../../images/mist.png"
 import rain from "../../images/rain.png"
 import snow from "../../images/snow.png"
+import weatherImg from "../../images/weather.png"
 import "./WeatherCard.css"
 
 function WeatherCard({weatherDetails}) {
@@ -14,7 +15,7 @@ function WeatherCard({weatherDetails}) {
 
   const temp = Math.round(temperature - 273.15);
 
-  let weatherImage = snow
+  let weatherImage = weatherImg
 
   switch(weather){
     case 'Clouds':
