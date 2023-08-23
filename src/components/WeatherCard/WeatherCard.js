@@ -11,7 +11,7 @@ import "./WeatherCard.css"
 
 function WeatherCard({weatherDetails}) {
 
-  const {city, temperature, humidity, description, weather, windSpeed} = weatherDetails
+  const {city, country, temperature, humidity, description, weather, windSpeed} = weatherDetails
 
   const temp = Math.round(temperature - 273.15);
 
@@ -40,7 +40,7 @@ function WeatherCard({weatherDetails}) {
   return (
     <>
       <div className='weather-card'>
-        <span className='city'>{city? city : "Location"}</span>
+        <span className='city'>{city? city : "Location"}{country? `, ${country}` : ""}</span>
         <div className='weather-image-card'>
           <img src={weatherImage} alt='cloud' className='weather-image'/>
         </div>
